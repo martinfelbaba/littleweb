@@ -1,0 +1,36 @@
+{
+  "name": "littleweb",
+  "version": "1.0.0",
+  "description": "A small demo site for npm scri[ting adventures",
+  "jslintConfig" : {
+	  "esnext": "true",
+	  "noyield": "true" 
+  },
+  "main": "index.js",
+  "scripts": {
+    "pretest": "npm run lint",
+    "test": "mocha test -u bdd -R spec",
+    "posttest": "echo 'after tests'",
+    "start": "node index.js",
+    "stop": "echo \"Running stop script\"",
+    "prestart:dev": "echo 'before dev statr'",
+    "start:dev": "node index.js 4000",
+    "poststart:dev": "echo 'after dev statr'",
+	"lint": "jslint *.js **/*.js"
+  },
+  "keywords": [
+    "npm",
+    "scripting"
+  ],
+  "author": "Martin Felbaba",
+  "license": "MIT",
+  "devDependencies": {
+    "jslint": "^0.12.1",
+    "mocha": "^10.2.0",
+    "should": "^13.2.3",
+    "supertest": "^6.3.3"
+  },
+  "dependencies": {
+    "koa": "^2.14.2"
+  }
+}
