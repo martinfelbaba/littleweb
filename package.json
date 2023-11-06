@@ -13,9 +13,9 @@
     "posttest": "echo 'after tests'",
     "start": "node index.js",
     "stop": "echo \"Running stop script\"",
-    "prestart:dev": "echo 'before dev statr'",
+    "prestart:dev": "echo 'before dev start'",
     "start:dev": "node index.js 4000",
-    "poststart:dev": "echo 'after dev statr'",
+    "poststart:dev": "echo 'after dev start'",
 	"lint": "jslint *.js **/*.js"
   },
   "keywords": [
